@@ -13,7 +13,7 @@ class GooglePlaces
   end
 
   def status
-    serach_place.status
+    search_place.status
   end
 
   private

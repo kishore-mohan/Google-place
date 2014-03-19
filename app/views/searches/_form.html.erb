@@ -1,0 +1,15 @@
+<p>
+  <b style='color: red;'><%= @error_message %></b>
+</p>
+
+</br>
+<%#= raise @results.inspect %>
+<%- if @results.present? %>
+    <%- @results.each do |result| %>
+        <p>
+          <b>Address :</b> <%= result['formatted_address'] %>
+        </p>
+    <%-end%>
+<%- else %>
+    <b>No Result found.</b>
+<%-end%>
